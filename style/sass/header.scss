@@ -1,0 +1,27 @@
+.header {
+  border: 3px solid red;
+  @extend %parent-block-div;
+  display: flex;
+  justify-content: space-between;
+
+  background-color: $background;
+
+  &__logo {
+    padding-top: 32px;
+    padding-bottom: 33px;
+  }
+
+  &__nav {
+    padding-top: 38px;
+    padding-bottom: 38px;
+  }
+
+  &__nav_a {
+    text-decoration: none;
+    font-family: $font-family;
+    font-weight: 500;
+    font-size: 20px;
+    color: $text-color;
+    margin-right: 60px;
+  }
+}

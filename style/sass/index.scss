@@ -1,0 +1,20 @@
+@import "variables.scss";
+@import "sample.scss";
+@import "header.scss";
+@import "new.scss";
+@import "reproduction.scss";
+@import "team.scss";
+@import "welcome.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header,
+.main,
+.footer {
+  max-width: 1440px;
+  margin: 0 auto;
+}
