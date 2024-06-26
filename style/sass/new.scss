@@ -1,0 +1,40 @@
+.new {
+  background-image: url(../../assets/new/pic_background.png);
+  background-repeat: no-repeat;
+  max-height: 100%;
+  height: 574px;
+
+  &__wrapper {
+    padding: 70px 754px 70px 165px;
+  }
+
+  &__head {
+    display: flex;
+  }
+
+  &__img {
+  }
+
+  &__head_title {
+    @extend %p;
+    font-size: 40px;
+    line-height: 100%;
+    color: $color-p;
+    padding-bottom: 20px;
+  }
+
+  &__head_p {
+    @extend %p;
+    font-size: 17px;
+    color: #fff;
+  }
+
+  .text {
+    margin-bottom: 11px;
+  }
+
+  &__btn {
+    @extend %button-new;
+    margin-top: 60px;
+  }
+}

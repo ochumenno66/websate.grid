@@ -1,22 +1,15 @@
 .welcome {
-  border: 3px solid red;
   @extend %parent-block-div;
 
   display: flex;
   gap: 30px;
 
   &__img {
-    border: 2px solid red;
-    width: 540px;
-    height: 621px;
+    max-width: 82%;
   }
-
   &__wrapper {
-    border: 2px solid red;
     margin-top: 145px;
     margin-bottom: 144px;
-
-    height: 331px;
   }
   &__wrapper_title {
     @extend %h2;
@@ -28,11 +21,12 @@
   &__wrapper_p {
     @extend %p;
     color: $main-color;
+    font-size: 17px;
     padding-top: 20px;
     padding-bottom: 60px;
   }
   &__wrapper_btn {
     @extend %button-card;
-    width: 227px;
+    width: 42.4%;
   }
 }

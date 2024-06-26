@@ -1,0 +1,83 @@
+.reproduction {
+  @extend %parent-block-div;
+  margin-top: 70px;
+  margin-bottom: 70px;
+
+  &__head {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__head_title {
+    @extend %h2;
+    font-size: 40px;
+  }
+  &__head_nav {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__nav {
+    @extend %h2;
+    font-size: 20px;
+    background: #d4e8d9;
+    padding: 10px 20px;
+    border-radius: 20px;
+  }
+
+  .nav_link {
+    background: #376b44;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+  }
+
+  &__card {
+    width: 350px;
+    background: $background;
+  }
+
+  &__card_img {
+    margin: 20px 20px;
+    width: 88%;
+  }
+
+  &__card_p {
+    @extend %p;
+    color: $main-color;
+    padding-left: 20px;
+    padding-bottom: 10px;
+  }
+
+  &__card_title {
+    @extend %p;
+    color: $text-color;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-bottom: 8px;
+  }
+
+  &__card_description {
+    @extend %p;
+    color: $text-color;
+    padding-left: 20px;
+    padding-bottom: 30px;
+  }
+
+  &__card_price {
+    @extend %p;
+    font-size: 24px;
+    color: $second-color;
+    padding-left: 20px;
+  }
+
+  &__card_btn {
+    @extend %button-card;
+    margin: 20px 20px 30px 20px;
+    width: 89%;
+    height: 9%;
+  }
+}
