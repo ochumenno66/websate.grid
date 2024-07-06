@@ -1,0 +1,30 @@
+.team {
+  @extend %parent-block-div;
+  display: flex;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  gap: 30px;
+
+  &__foto_img {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  &__description {
+    width: 635px;
+    margin-top: 124px;
+  }
+
+  &__description_title {
+    @extend %h2;
+    font-size: 40px;
+    padding-bottom: 20px;
+  }
+
+  &__description_p {
+    @extend %p;
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+}
